@@ -1,19 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(){
-    int i;
-    int n;
-    int sum=0;
-    printf("Ban hay nhap so nguyen duong ");
-    scanf("%d", &n);
-    if (n <=0) {
-        printf("Ban nhap sai roi");
+    
+    for (int i = 1; i <= 9; i++) {
+        printf("Bang cuu chuong cua %d:\n", i);
+        
+        for (int j = 1; j <= 9; j++) {
+            printf("%d x %d = %d\n", i, j, i * j);
+        }
+        printf("\n");
     }
-    for (i = 0; i <= n; i++){
-        sum += i;
-    }
-    printf("Tong %d la %d", n,sum);
+    
     return 0;
 }
-
-
 
